@@ -1,0 +1,41 @@
+# Empty CSS file for your own CSS
+.navbar{
+	background-color: #eeeeee
+}
+.navbar-brand{
+	color: #80cbc4
+}
+
+
+
+.h1Center {
+    font-size: 220%;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    line-height: 1.6em;
+    display: block;
+    clear: both;
+    }
+    .cityItem11 {
+    background: url(img/twitter.png) left center no-repeat;
+    background-size: contain;
+    }
+    .hotSpotsNationalPark {
+    display: block;
+    clear: both;
+    overflow: hidden;
+    font-size: 180%;
+    padding: 20px 0px 20px 70px;
+    margin: 40px 0px 0px 0px;
+    }
+    .container {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    /* vertical-align: baseline; */
+    font-weight: normal;
+    }

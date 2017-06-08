@@ -1,0 +1,291 @@
+
+ {% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Explore Greater Taipei </title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    <link href="{% static 'css/theme.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cnt.css' %}">
+    </head>
+            <script>
+            var recommend =0;
+                function myFunction() {
+                recommend+=1;
+                document.getElementById("recommendNum").innerHTML = recommend;
+            }
+        </script>
+  <body>
+  <!--nav-->
+<div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                         <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button> 
+                    <a class="navbar-brand" href="{% url 'attractions:home' %}"><b>Greater Taipei</b></a>
+                </div>
+                
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="{% url 'attractions:weather' %}"><b>氣候概況</b></a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>小編精選</b><strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+                  <a href="{% url 'attractions:Tagfamily' %}">適合一家大小</a>
+                </li>
+                <li>
+                  <a href="{% url 'attractions:Taglove' %}">毫無顧忌地放閃</a>
+                </li>
+                <li>
+                  <a href="{% url 'attractions:Tagfamous' %}">網美東拍西拍</a>
+                </li>
+                  <li>
+                  <a href="{% url 'attractions:Taggirls' %}">姊妹淘聊心事</a>
+                </li>
+                <li>
+                  <a href="{% url 'attractions:Tagtourist' %}">叫我觀光客</a>
+                </li>
+                <li>
+                  <a href="{% url 'attractions:Tagloner' %}">邊緣人自己玩</a>
+                </li>
+                <li>
+                  <a href="{% url 'attractions:Tagwriter' %}">我是 文 青。</a>
+                </li>
+							</ul>
+						</li>
+						<li>
+							<a href="{% url 'attractions:aboutus' %}"><b>關於我們</b></a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{% static 'img/translate.png' %}" style="width: 35px "><strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="{% url 'attractions:home' %}">繁體中文</a>
+								</li>
+								<li>
+									<a href="{% url 'attractions:home_eng' %}">English</a>
+								</li>
+								<li>
+									<a href="{% url 'attractions:home_jp' %}">日本語</a>
+								</li>
+								<li class="divider">
+									<li><a href="#">2099預計推出:火星文</a>
+									</li>
+								</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+            </nav>
+        </div>
+    </div>
+<body>
+  <div class="container" style="text-align:center">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2" backgroung-size:100% 100%;>
+            <h1><strong>淡水老街</strong></h1><br><br>
+                <div id="myCarousel" class="carousel slide">
+                <!--slide-->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!--slide-->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="{% static 'img/K.jpg' %}" alt="first slide 1"/>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/L.jpg' %}" alt="second slide 2"/>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'img/M.jpg' %}" alt="three slide 3"/>
+                    </div>
+                </div>
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsquo;</a>
+                </div>
+        </div>
+    </div>
+    </div>
+            <div class="col-lg-12" style="text-align:center">
+            <div class="col-md-6" style="margin-top: 80px;margin-left: 120px">
+            <h1>景點介紹</h1><br>
+            <h4>淡水是一個迷人的小鎮，有著說不完的故事，是台灣人、是觀光客必去景點之一，古蹟、美食與景點是淡水的標籤，天氣好的假日就適合到淡水看看夕陽、享受地方的人文氣息吧！廢話不多說，來看看我們推薦的淡水美食！
+
+</h4>
+            </div>
+            <div class="col-md-4" style="margin-top: 100px">
+            <img src="{% static 'img/hand.png' %}" style="width:100px;height: 100px">QR CODE<br>
+            <img src="{% static 'img/qrcode.png' %}" style="width:200px;height: 200px"><br><br><br>
+            <img src="{% static 'img/good.png' %}" style="width:80px;height: 80px;margin-top:-20px">讚讚指數<br>
+            <h3 id="recommendNum">0</h3>
+
+
+            <button class="recommend" onclick="myFunction()">點我推薦</button>
+            </div>
+            </div>
+    
+    <div class="container" style="margin-top: 600px">
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                   <h2 class="brand-before">
+                        <img src="{% static 'img/thief.png' %}"
+
+ style="width:70px;height: 70px">
+                    </h2>
+                    <h1 class="brand-name">INFORMATION</h1>
+                    <hr class="tagline-divider">
+                    <div style="margin: 0 auto">
+                    <div class="col-md-6" style="background-color:#FFE4E1;text-align:center;"><h4><strong>交通資訊:</strong> 新北市淡水區中正路<br> <strong>營業時間:</strong> 無限制</h4>
+                    </div>
+                    <div class="col-md-6" style="background-color:lightblue;text-align:middle"><h4><strong>標籤</strong> 姊妹滔／情侶／親子旅遊
+<br>
+                    <strong>配備</strong> 空肚子來吃美食/悠哉的心/搭很久捷運的耐心
+</h4>
+                    </div>
+                    </div>
+                    </div>
+            <div class="col-lg-12 text-center" style="margin-top: 100px">
+                <h2 class="brand-before">
+                    <img src="{% static 'img/food.png' %}"
+
+ style="width:70px;height: 70px">
+                </h2>
+                <h1 class="brand-name">FOODIE</h1>
+                <hr class="tagline-divider">
+                <button onclick="document.getElementById('id01').style.display='block'" type="button" class="btn btn-primary btn-circle btn-xl" style="border:5px white double;">正宗阿給</button>
+                    <div id="id01" class="modal">
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                              <img src="{% static 'img/N.jpg' %}" alt="真理街正宗阿給" class="avatar">
+                                <h1 class="lineheight2"><b>真理街正宗阿給創始店</b></h1>
+                                <h4 class="lineheight1">
+                                    <img src="{% static 'img/gps.png' %}" height="20px" width="20px"> 
+
+  新北市淡水區真理街6-1號<br>
+                                    <img src="{% static 'img/hand-gesture.png' %}" height="20px" width="20px"> 
+
+  把油豆腐挖開包入冬粉，再用魚漿封口蒸煮，食用時淋上醬汁，<br>是淡水必吃中的必吃。這家是傳說中的始祖，大家不要走錯間了！<br>
+                                    <b>營業時間  </b>5:00 A.M.~ 15:00 P.M.賣完為止<br>
+                                    
+
+                                </h4>
+                            </div>
+                        </form>
+                    </div>
+
+                <button onclick="document.getElementById('id02').style.display='block'" type="button" class="btn btn-info btn-circle btn-xl" style="border:5px white double;">阿給蛋餅</button>
+                    <div id="id02" class="modal">
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                              <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                              <img src="{% static 'img/O.jpg' %}" alt="吳家阿給蛋餅" class="avatar">
+                                <h1 class="lineheight2"><b>吳家阿給蛋餅</b></h1>
+                                <h4 class="lineheight1">
+                                    <img src="{% static 'img/gps.png' %}" height="20px" width="20px"> 
+
+  新北市淡水區水源街一段7號<br>
+                                    <img src="{% static 'img/hand-gesture.png' %}" height="20px" width="20px"> 
+
+  在地人的推薦！蛋餅非常特別與一般手擀麵皮不同是用濕的麵糊所煎成，,<br>外皮焦脆，十分有特色，配上阿給是最道地的早餐<br>
+                                    <b>營業時間  </b>5:30-18:00(賣完為止)<br>
+                                    
+                                </h4>
+                            </div>
+                        </form>
+                    </div>
+                <button onclick="document.getElementById('id03').style.display='block'" type="button" class="btn btn-primary btn-circle btn-xl" style="border:5px white double;">現烤蛋糕</button>
+                    <div id="id03" class="modal">
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                              <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+                              <img src="{% static 'img/P.png' %}" alt="現烤蛋糕" class="avatar">
+                                <h1 class="lineheight2"><b>源味本舖現烤蛋糕</b></h1>
+                                <h4 class="lineheight1">
+                                    <img src="{% static 'img/gps.png' %}" height="20px" width="20px"> 
+
+  新北市淡水區中正路8巷2-1號<br>
+                                    <img src="{% static 'img/hand-gesture.png' %}" height="20px" width="20px"> 
+
+  糕體Q彈在回家切片時，依然可以感受到，但是一口吃下是溼潤卻不濕爛的蛋糕體，帶著濃濃的蛋香入口即化！要買先排隊！<br>
+                                    <b>營業時間  </b> 星期一至五：9:00~18:00/
+六日：8:00~20:00<br>
+                                   
+                                </h4>
+                            </div>
+                        </form>
+                    </div>
+                <div class="col-lg-12 text-center" style="margin-top: 100px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7221.916310362296!2d121.43438912208867!3d25.170890735633453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a55a6909ba39%3A0xa4902f894f880bc7!2z5reh5rC06ICB6KGX!5e0!3m2!1szh-TW!2stw!4v1496843656056" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!-- 回上一頁 -->
+<div class="backBtn">
+    <a href="{% url 'attractions:home' %}">Back</a>
+
+</div>
+
+</body>
+
+
+<!--footer><-->
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3> Learn From </h3> 
+                    <ul>
+                        <li> <a href="https://github.com/jerrywu2013"> Jerry </a> </li>
+                        <li> <a href="https://kkbruce.tw/bs3"> Bootsrap </a> </li>
+                        <li> <a href="https://www.google.com.tw/"> Google </a> </li>
+                    </ul>
+                    <p class="pull-left"> Copyright © wecannotlivewithoutGoogle </p>
+                </div>
+                <div class="col-md-6">
+                    <h3> More detail </h3>
+                    <ul>
+                    <p>24 hours no one will answer telNo.：0800-695995</p>
+                    </ul>
+                    <ul class="social">
+                        <li> <a href="#"><img src="{% static 'img/facebook.png' %}" style="width: 35px">  </a> </li>
+                        <li> <a href="#"> <img src="{% static 'img/twitter.png' %}" style="width: 35px">  </a> </li>
+                        <li> <a href="#"> <img src="{% static 'img/google-plus.png' %}" style="width: 35px" ></a></li>
+                        <li> <a href="#"> <img src="{% static 'img/instagram.png' %}" style="width: 35px"> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+</footer>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+  </body>
+</html>
